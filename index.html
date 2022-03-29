@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>timer</title>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap" rel="stylesheet">
+  <!-- Css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Icons -->
+  <script src="https://kit.fontawesome.com/32d0db8d97.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <main class="timer__main">
+    <h1 class="timer__title">We're launching soon</h1>
+
+    <div class="countdown">
+      <!-- Days -->
+      <div class='countdown__display'>
+        <div class="countdown__timer">
+          <span class="countdown__line"></span>
+          <p id="valueDays" class="countdown__value">00</p>
+          <div class="semicircle semicircle--left"></div>
+          <div class="semicircle semicircle--right"></div>
+        </div>
+        <div class="countdown__text">Days</div>
+      </div>
+      <!-- Hours -->
+      <div class='countdown__display'>
+        <div class="countdown__timer">
+          <span class="countdown__line"></span>
+          <p id="valueHours" class="countdown__value">00</p>
+          <div class="semicircle semicircle--left"></div>
+          <div class="semicircle semicircle--right"></div>
+        </div>
+        <div class="countdown__text">Hours</div>
+      </div>
+      <!-- Minutes -->
+      <div class='countdown__display'>
+        <div class="countdown__timer">
+          <span class="countdown__line"></span>
+          <p id="valueMinutes" class="countdown__value">00</p>
+          <div class="semicircle semicircle--left"></div>
+          <div class="semicircle semicircle--right"></div>
+        </div>
+        <div class="countdown__text">Minutes</div>
+      </div>
+      <!-- Seconds -->
+      <div class='countdown__display'>
+        <div class="countdown__timer">
+          <span class="countdown__line"></span>
+          <p id="valueSecond" class="countdown__value">00</p>
+          <div class="semicircle semicircle--left"></div>
+          <div class="semicircle semicircle--right"></div>
+        </div>
+        <div class="countdown__text">Seconds</div>
+      </div>
+    </div>
+  </main>
+  <div class="wave">
+    <div class="footer__social">
+      <a href="#" class="footer__link">
+        <i class="fa-brands fa-facebook-square fa-2x footer__icon"></i>
+      </a>
+      <a href="#" class="footer__link">
+        <i class="fa-brands fa-pinterest-square fa-2x footer__icon"></i>
+      </a>
+      <a href="#" class="footer__link">
+        <i class="fa-brands fa-instagram fa-2x footer__icon"></i>
+      </a>
+    </div>
+  </div>
+  
+  <script src="js/index.js"></script>
+</body>
+</html>

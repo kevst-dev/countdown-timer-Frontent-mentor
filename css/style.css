@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* ---- Fonts ---- */
+  --red-hat-text: 'Red Hat Text', sans-serif;
+
+  /* ---- Colors ---- */
+
+  /* Primary */
+  --grayish-blue: hsl(237, 18%, 59%);
+  --soft-red: hsl(345, 95%, 68%);
+
+  /* Neutral */
+  --white: hsl(0, 0%, 100%);
+  --dark-desaturated-blue: hsl(236, 21%, 26%);
+  --very-dark-blue: hsl(235, 16%, 14%);
+  --very-dark: hsl(234, 17%, 12%);
+
+  --padding-container: 80px 0;
+}
+
+body {
+  font-family: var(--red-hat-text);
+  font-size: 14px;
+
+  background-color: var(--very-dark-blue);
+  background-image: url("../images/bg-stars.svg");
+}
+
+/* ---- Countdown ---- */
+.timer__main {
+  width: 100vw;
+  height: calc(100vh - 197px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Title */
+.timer__title {
+  color: var(--white);
+  letter-spacing: .2rem;
+}
+
+/* Tiles */
+.countdown {
+  margin-top: 65px;
+  display: flex;
+  gap: 1rem;
+}
+
+.countdown__display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.countdown__timer {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: var(--dark-desaturated-blue);
+  color: var(--soft-red);
+
+  border-radius: .4rem;
+  font-size: 3rem;
+  letter-spacing: 1px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.countdown__line {
+  background-color: var(--very-dark-blue);
+  height: 1px;
+  position: absolute;
+  width: 100%;
+}
+
+.semicircle {
+  background-color: var(--very-dark-blue);
+  position: absolute;
+  width: 5px;
+  height: 14px;
+}
+
+.semicircle--left {
+  border-radius: 0 300px 300px 0;
+  left: 0;
+}
+
+.semicircle--right {
+  border-radius: 300px 0 0 300px;
+  right: 0;
+}
+
+.countdown__text { 
+  margin: 1rem; 
+  color: var(--grayish-blue);
+  text-transform: uppercase;
+}
+
+/* ---- Wave ---- */
+.wave {
+  z-index: -1;
+  width: 100%;
+  height: 197px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  background-image: url("../images/pattern-hills.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---- Footer ---- */
+.footer__social {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer__icon {
+  color: var(--grayish-blue);
+}
+
+.footer__icon:hover {
+  color: var(--soft-red);
+  transform: scale(1.5);
+  transition:color 0.5s, transform 0.5s ease-out;
+}
+
+@media (max-width: 480px) {
+  /* ---- Countdown ---- */
+
+  /* Title */
+  .timer__title {
+    width: 90%;
+    color: var(--white);
+    letter-spacing: .4rem;
+    text-align: center;
+  }
+  /* Tiles */
+  .countdown {
+    margin-top: 65px;
+    gap: 1rem;
+  }
+
+  .countdown__timer {
+    width: 75px;
+    height: 75px;
+
+    font-size: 2.5rem;
+  }
+
+  .semicircle {
+    width: 3px;
+    height: 8px;
+  }
+
+  .countdown__text { 
+    margin: 0;
+    margin-top: 1rem; 
+  }
+
+  /* ---- Wave ---- */
+  .wave {
+    background-position: 80% 0;
+  }
+
+  /* ---- Footer ---- */
+  .footer__social {
+    margin-top: 5rem;
+    gap: 1.5rem;
+  }
+}
+
+
