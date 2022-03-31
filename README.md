@@ -10,10 +10,11 @@ This is a solution to the [Launch countdown timer challenge on Frontend Mentor](
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
+- [Author](#author)
 
 ## Overview
 
-***
+*** 
 
 ### The challenge
 
@@ -37,8 +38,8 @@ Mobile view:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [here](https://github.com/kevst-dev/countdown-timer-Frontent-mentor)
+- Live Site URL: [here](https://kevst-dev.github.io/countdown-timer-Frontent-mentor/)
 
 ## My process
 
